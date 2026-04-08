@@ -16,6 +16,7 @@
     "@storm-live-addon/storm-client": "workspace:*",
     "@storm-live-addon/risk-engine": "workspace:*",
     "dotenv": "^16.0.0",
+    "typescript": "^5.6.3",
     "zod": "^4.0.0"
   },
   "devDependencies": {
