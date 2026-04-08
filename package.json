@@ -8,6 +8,10 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "tsc -b .",
+    "clean": "tsc -b . --clean",
+    "start:paper": "npm run start:paper --workspace apps/trader-bot",
+    "start:live": "npm run start:live --workspace apps/trader-bot",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
