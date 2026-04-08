@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "files": [],
+  "references": [
+    { "path": "./packages/storm-client" },
+    { "path": "./packages/risk-engine" },
+    { "path": "./apps/trader-bot" }
+  ]
+}
