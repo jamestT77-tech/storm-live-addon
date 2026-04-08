@@ -1,0 +1,24 @@
+{
+  "name": "@storm-live-addon/trader-bot",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b .",
+    "dev": "ts-node src/index.ts",
+    "start:paper": "npm run build && node dist/index.js paper",
+    "start:live": "npm run build && node dist/index.js live"
+  },
+  "dependencies": {
+    "@storm-live-addon/storm-client": "workspace:*",
+    "@storm-live-addon/risk-engine": "workspace:*",
+    "dotenv": "^16.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0"
+  }
+}
